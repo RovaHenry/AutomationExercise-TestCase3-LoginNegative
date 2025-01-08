@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mocha": "^11.0.1",
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.27.0",
+    "webdriver": "^9.5.1"
+  }
+}
