@@ -1,2 +1,2 @@
 # AutomationExercise-TestCase2-LoginPositive
-Test Case 2: Login Positive with correct input
+Test Case 1: Login Positive with correct input
