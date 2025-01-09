@@ -15,9 +15,7 @@ Steps Covered:
 
 4. Verify that an appropriate error message is displayed and no user session is initiated.
 
-Tools & Technologies Used:
-
-Selenium WebDriver, Mocha
+Tools & Technologies Used: Selenium WebDriver, Mocha
 
 Programming Language: JavaScript
 
