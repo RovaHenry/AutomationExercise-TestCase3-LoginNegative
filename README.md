@@ -6,15 +6,17 @@ Overview
 The test case validates the application's behavior when a user attempts to log in with an incorrect email and password combination. This ensures the login functionality handles invalid credentials appropriately by displaying error messages without granting access.
 
 Steps Covered:
-Navigate to the Login page of the application.
 
-Enter an invalid email address and password in the respective fields.
+1. Navigate to the Login page of the application.
 
-Click the "Login" button.
+2. Enter an invalid email address and password in the respective fields.
 
-Verify that an appropriate error message is displayed and no user session is initiated.
+3. Click the "Login" button.
+
+4. Verify that an appropriate error message is displayed and no user session is initiated.
 
 Tools & Technologies Used:
+
 Selenium WebDriver, Mocha
 
 Programming Language: JavaScript
