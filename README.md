@@ -7,8 +7,11 @@ The test case validates the application's behavior when a user attempts to log i
 
 Steps Covered:
 Navigate to the Login page of the application.
+
 Enter an invalid email address and password in the respective fields.
+
 Click the "Login" button.
+
 Verify that an appropriate error message is displayed and no user session is initiated.
 
 Tools & Technologies Used:
