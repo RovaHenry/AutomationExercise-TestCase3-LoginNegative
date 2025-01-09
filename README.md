@@ -19,5 +19,5 @@ Programming Language: JavaScript
 Browser: Google Chrome
 
 Link to Test Case Documentation
-For more details, visit the official test case documentation:
-Automation Exercise - Test Case 3 (https://www.automationexercise.com/test_cases)
+For more details, visit the official test case 
+documentation: Automation Exercise - Test Case 3 (https://www.automationexercise.com/test_cases)
