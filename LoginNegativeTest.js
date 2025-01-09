@@ -9,15 +9,13 @@ require('dotenv').config();
 
 const browser = process.env.BROWSER;
 const baseURL = process.env.BASE_URL;
-const email = process.env.EMAIL;
-const password = process.env.PASSWORD;
 
 const screenshotDir = './screenshots/';
 if(!fs.existsSync(screenshotDir)){
     fs.mkdirSync(screenshotDir, {recursive: true});
 }
 
-describe('TestCase 2 [Login Positive]', function(){
+describe('TestCase 3 [Login Negative]', function(){
     this.timeout(50000);
     let driver;
 
