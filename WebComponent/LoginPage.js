@@ -1,6 +1,6 @@
 const {By} = require('selenium-webdriver');
 
-class RegisterPage {
+class LoginPage {
     constructor(driver) {
         this.driver = driver;
         this.loginMenu = By.css("[href='/login']");
@@ -8,7 +8,7 @@ class RegisterPage {
         this.passwordInput = By.css("[name='password']");
         this.loginInput = By.css("[data-qa='login-button']");
         this.loginHeader = By.css(".login-form > h2");
-        this.loggedInUsername = By.xpath("//a[contains(.,'Logged in as Rova Henryawan')]");
+        this.incorrectPassword = By.xpath("//p[.='Your email or password is incorrect!']");
     }
 
     async loginButton() {
@@ -25,10 +25,10 @@ class RegisterPage {
         const title = await this.driver.findElement(this.loginHeader).getText();
         return title;
     }
-    async verifyLoggedInUsername() {
-        const title = await this.driver.findElement(this.loggedInUsername).getText();
+    async verifyIncorrect() {
+        const title = await this.driver.findElement(this.incorrectPassword).getText();
         return title;
     }
 }
 
-module.exports = RegisterPage;
+module.exports = LoginPage;

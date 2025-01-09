@@ -2,7 +2,6 @@ const {Builder} = require('selenium-webdriver');
 
 const DashboardPage = require ('./WebComponent/DashboardPage');
 const LoginPage = require ('./WebComponent/LoginPage');
-const DeleteAccount = require ('./WebComponent/DeleteAccount');
 
 const assert = require('assert');
 const fs = require('fs');
@@ -47,21 +46,15 @@ describe('TestCase 2 [Login Positive]', function(){
             console.log("Homepage is not visible.");
         }  
     });
-    it('Verify Login page and try to login', async function () {
+    it('Verify Login page and try to login with inccorect email and password', async function () {
         const loginPage = new LoginPage(driver);
         await loginPage.loginButton();
         const loginTitle = await loginPage.verifyLoginUpHeader();
         assert.strictEqual(loginTitle, 'Login to your account', 'We are not in login page');
-        await loginPage.login(email, password);
-        const loginVerif = await loginPage.verifyLoggedInUsername();
-        assert.strictEqual(loginVerif, 'Logged in as Rova Henryawan', 'Login failed');
-    });
-    it('Verify Delete Account', async function () {
-        const deleteAccount = new DeleteAccount(driver);
-        await deleteAccount.deleteAcc();
-        const deleteHeader = await deleteAccount.verifyAccDeleted();
-        assert.strictEqual(deleteHeader, 'ACCOUNT DELETED!', 'Account is not deleted');
-        await deleteAccount.continueBtn();
+        await loginPage.login('hahaha@gmail.com', 'hihihi');
+        const incorrectLogin = await loginPage.verifyIncorrect();
+        assert.strictEqual(incorrectLogin, 'Your email or password is incorrect!', 'We are not in login page');
+
     });
 
     //Assertion atau validasi
