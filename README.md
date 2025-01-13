@@ -4,6 +4,7 @@ Test Case 3: Login User with Incorrect Email and Password
 This repository contains the implementation and documentation of Test Case 3 from Automation Exercise: "Login User with incorrect email and password."
 
 Overview
+
 The test case validates the application's behavior when a user attempts to log in with an incorrect email and password combination. This ensures the login functionality handles invalid credentials appropriately by displaying error messages without granting access.
 
 Steps Covered:
