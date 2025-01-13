@@ -1,5 +1,6 @@
 # AutomationExercise-TestCase3-LoginNegative
 Test Case 3: Login User with Incorrect Email and Password
+
 This repository contains the implementation and documentation of Test Case 3 from Automation Exercise: "Login User with incorrect email and password."
 
 Overview
